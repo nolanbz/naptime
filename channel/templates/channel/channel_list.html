@@ -1,0 +1,15 @@
+<div>
+    <h1><a href="/">Naptime</a></h1>
+</div>
+
+{% for channel in channels %}
+    <div>
+        <p>published: {{ channel.published_date }}</p>
+        <h2><a href="">{{ channel.channel_name }}</a></h2>
+        <h2><a href="">{{ channel.channel_url }}</a></h2>
+        <h2><a href="">{{ channel.video_count }}</a></h2>
+        <h2><a href="">{{ channel.channel_location }}</a></h2>
+        <h2><a href="">{{ channel.subscriber_count }}</a></h2>
+        <h2><a href="">{{ channel.email }}</a></h2>
+    </div>
+{% endfor %}
